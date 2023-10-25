@@ -1,0 +1,152 @@
+.moviesGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.noResults{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (max-width: 560px) {
+    .moviesGrid{
+        grid-template-columns: 100%;
+    }
+}
+
+.containerSearchAll {
+    display: flex;
+    justify-content: center;
+}
+.filtro{
+    padding-left: 10px;
+}
+
+.divFilter {
+    flex-direction: column;
+    padding: 10px;
+}
+
+.filterGen {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    padding: 10px;
+    color: black;
+    width: 200px;
+}
+
+.filterSub {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: black;
+    width: 200px;
+}
+
+.generos {
+    color: aliceblue;
+}
+
+.filterGenre {
+    height: 35px;
+    border-radius: 10px;
+    padding: 5px 30px 5px 10px;
+    width: 120px;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    padding-top: 10px;
+    margin-left: auto;
+}
+
+.searchBox {
+    position: relative;
+}
+
+.searchButton {
+    color: white;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    background: none;
+}
+
+.searchInput {
+    height: 35px;
+    border-radius: 10px;
+    padding: 5px 30px 5px 10px;
+    width: 250px;
+}
+
+/* Carrusel Imagenes */
+.carrusel {
+    text-align: center;
+}
+
+.imagenCarrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movieSecond{
+    max-width: 280px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px;
+    animation-duration: 2s;
+    animation-name: changeShadow1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes changeShadow1 {
+    from {
+        opacity: 20%;
+    }
+    to {
+        opacity: 40%;
+    }
+}
+
+.moviePrimary {
+    border-radius: 10px;
+    margin: 15px;
+    animation-duration: 2s;
+    animation-name: changeShadow;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes changeShadow {
+    from {
+        max-width: 200px;
+        height: auto;
+        opacity: 40%;
+    }
+    to {
+        max-width: 330px;
+        height: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .moviePrimary{
+       width: 90%;
+       height: auto;
+    }
+}
