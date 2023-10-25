@@ -17,6 +17,13 @@ import { FaSearch } from 'react-icons/fa';
             </div>
           </div>
         </main>
+
+        <Routes>
+            <Route path='/movies/:movieId' element={<MovieDetails/>}/>
+            <Route path='/' element={<MoviesGrid/>}/>
+            <Route path='/login' element={<Login/>}/>
+          </Routes>
+
      </Router>
    )
  }
