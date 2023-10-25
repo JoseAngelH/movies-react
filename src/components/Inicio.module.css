@@ -1,0 +1,45 @@
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    background-color: #0a1c34;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoImg {
+    height: 90px;
+}
+
+
+.NavContainer {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .NavContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .logoImg {
+        width: 140px;
+        height: 60px;
+    }
+}
+
+.login:hover {
+    opacity: 30%;
+}
+
+.login {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.register {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.register:hover {
+    opacity: 30%;
+}
