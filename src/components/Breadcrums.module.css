@@ -1,0 +1,33 @@
+.breadcrumContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.breadcrumContainer > *{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.crumb:after{
+    content: '>';
+    margin-left: 10px;
+}
+
+.crumb:last-child::after{
+    display: none;
+}
+
+.crumbLogin {
+    color: white;
+}
+
+.crumbLogin:after{
+    content: '>';
+    margin-left: 10px;
+}
+
+.crumbLogin:last-child::after{
+    display: none;
+}
