@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Inicio.module.css';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa'; 
+import MoviesGrid from './MoviesGrid'; 
 
  function Inicio() {
    return (
@@ -17,6 +18,10 @@ import { FaSearch } from 'react-icons/fa';
             </div>
           </div>
         </main>
+
+        <Routes>
+            <Route path='/' element={<MoviesGrid/>}/>
+          </Routes>
      </Router>
    )
  }
