@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './Inicio.module.css';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import { FaSearch } from 'react-icons/fa';
+import Login from './Login';
+import MoviesGrid from './MoviesGrid'; 
+import MovieDetails from './MovieDetails';
 
  function Inicio() {
    return (
