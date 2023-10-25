@@ -24,7 +24,7 @@ import MovieDetails from './MovieDetails';
             <Route path='/movies/:movieId' element={<MovieDetails/>}/>
             <Route path='/' element={<MoviesGrid/>}/>
             <Route path='/login' element={<Login/>}/>
-          </Routes>
+        </Routes>
 
      </Router>
    )
