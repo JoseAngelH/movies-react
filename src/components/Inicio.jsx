@@ -20,8 +20,11 @@ import MoviesGrid from './MoviesGrid';
         </main>
 
         <Routes>
+            <Route path='/movies/:movieId' element={<MovieDetails/>}/>
             <Route path='/' element={<MoviesGrid/>}/>
-          </Routes>
+            <Route path='/login' element={<Login/>}/>
+        </Routes>
+
      </Router>
    )
  }
